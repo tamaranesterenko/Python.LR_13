@@ -9,7 +9,6 @@ def summ_null(*args):
         for arg in args:
             if arg != 0:
                 summa += arg
-                print(summa)
             else:
                 break
         return summa

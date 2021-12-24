@@ -8,7 +8,7 @@ def sred_znach(*args):
         for arg in args:
             summa = summa + arg
         n = len(args)
-        return summa // n
+        return summa / n
     else:
         return None
 

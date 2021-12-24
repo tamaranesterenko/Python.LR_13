@@ -4,17 +4,12 @@
 import sys
 
 
-date_info = {'year': input("Введите год:"),
-             'month': input("Введите месяц:"),
-             'day': input("Введите день:")}
-track_info = {'artist': input("Введите ФИО:"),
-              'title': input("Введите название произведения:")}
-all_info = {**date_info, **track_info}
+def printArtist(owner, **track_info):
+    print(f"Owner Name: {owner}")
+    for track_info, name in track_info.items():
+        print(f"{track_info}: {name}")
+
 
 if __name__ == "__main__":
-    print("Выведите информацию о композиторе:", all_info)
-
-
-
-
+    printArtist("Bach", title="The Passion according to Matthew", year="1727")
 

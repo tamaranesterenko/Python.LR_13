@@ -6,9 +6,9 @@ def sred_garm(*args):
     if args:
         summa = float(0)
         for arg in args:
-            summa = summa + (1 // arg)
+            summa = summa + (1 / arg)
         n = len(args)
-        return n // summa
+        return n / summa
     else:
         return None
 
